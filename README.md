@@ -5,6 +5,13 @@
 - Open CMD ```npx create-next-app@latest ./```
 
 
+## Run App
+
+```bash
+npm run dev
+```
+
+
 ## Install React-Bootstrap on NextJS
 - ```npm i react-bootstrap bootstrap```
 
