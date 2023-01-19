@@ -2,10 +2,16 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
+import store from '@/redux/store'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+
+  const userHandler = () => {
+    store.dispatch({ type: "SET_USER", payload: "new_user_type" });
+  }
+
   return (
     <>
       <Head>
@@ -15,7 +21,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        Main Page
+        <p>Main Route</p>
+        <button onClick={ ()=> userHandler() }>dispatch to store</button>
       </main>
     </>
   )
