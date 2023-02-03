@@ -1,0 +1,7 @@
+.content {
+    color: green
+}
+
+:global(main) .content {
+    background-color: pink
+}

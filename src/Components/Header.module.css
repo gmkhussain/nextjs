@@ -1,0 +1,7 @@
+.header {
+    color: orange
+}
+
+:global(.mainDiv) .header {
+    border: 1px solid ;
+}
